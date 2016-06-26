@@ -1,0 +1,7 @@
+.idea*
+*.userprefs
+Temp/
+Library/
+*.suo
+*.sln
+*.csproj
