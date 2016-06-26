@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 
-public class BallMovement : MonoBehaviour
+namespace Assets.Scripts
 {
-    public float Dampening;
-
-	// Use this for initialization
-	public void Start ()
+    public class BallMovement : MonoBehaviour
     {
-        var rigidBody = GetComponent<Rigidbody2D>();
-        rigidBody.velocity = Random.insideUnitCircle * Dampening;
-	}
+        public float Dampening;
+
+        // Use this for initialization
+        public void Start ()
+        {
+            var rigidBody = GetComponent<Rigidbody2D>();
+            rigidBody.velocity = Random.insideUnitCircle * Dampening;
+        }
+    }
 }
